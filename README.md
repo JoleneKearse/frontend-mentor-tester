@@ -101,7 +101,14 @@ I start my first couple hours by:
 3) Starting the *README**; and
 4) Holding myself accountable, by posting on [LinkedIn](https://www.linkedin.com/in/jolene-kearse-2562ba218/)
 
+#### Day 2 🏁2️⃣
 
+Today I cleaned up the boilerplate and worked on the design on the fly!
+
+1) I use **DevTools** to determine the fonts used and add the **Google Fonts** links.
+2) Set up site colors using **custom properties**.
+3) Create my Header and Footer components.
+4) Have quite a time of it remembering how to import SVGs.
 
 
 
@@ -130,11 +137,25 @@ Unfortunately, I hate to cheat on...
 
 I do remember another fun time, when my three teammates and I tried recalling the exact CLI commands and order to initialize a repo...  Good times! I did have to cheat though, as I got `git remote add origin <SSH key>` in the wrong order, necessitating a second go!
 
-- ##### Good commit messages 
+- ##### Writing good commit messages 
 
 In my excitement and haste, I forgot to label my git commits correctly!
 
 [Writing better commit messages](https://medium.com/swlh/writing-better-commit-messages-9b0b6ff60c67)
+
+- ##### Getting correct file paths
+
+I gave myself an unnecessarily hard time importing SVG images, because **I forgot how file paths work**!  🤣  
+
+Initially I used a simple img tag after importing it: 
+```jsx
+import IconGithub from './assets/icon-github.svg'
+...
+<img src={IconGithub} alt="" />
+```
+
+
+
 <hr>
 
 ### What I learned 👩🏽‍🎓
@@ -150,6 +171,8 @@ In my excitement and haste, I forgot to label my git commits correctly!
 [Abstract's Screenshot API](https://app.abstractapi.com/api/screenshot/documentation) shows the (quite good) documentation for my chosen API.
 
 [Writing better commit messages](https://medium.com/swlh/writing-better-commit-messages-9b0b6ff60c67) is a great reminder on commit messages.
+
+[How to Import SVGs in a React and Vite app](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/#:~:text=Importing%20SVGs%20using%20the%20image,supports%20it%20off%20the%20bat.) provides 6 ways to do it.  The first worked in my case - of course I did start in reverse order! 🤣 
 
 <hr>
 
