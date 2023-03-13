@@ -7,6 +7,7 @@ Why the 7 exclamation points, you ask?
 Well, this is my **application project** for **[The Collab Lab](https://the-collab-lab.codes/)**.  I began this project on March 12 and the deadline is March 18, so _7 excited exclamations for 7 days_! ✨
 
 <hr>
+
 ## Table of Contents 📜
 - [Links 🔗]()
 - [Screenshots 📸]()
@@ -23,10 +24,12 @@ Well, this is my **application project** for **[The Collab Lab](https://the-coll
 ### Links 🔗
 
 <hr>
+
 ### Screenshots 📸
 
 
 <hr>
+
 ### Deciding on the project 📔
 
 With applications open I could finally see the [application](https://airtable.com/shrv9cqaTVHNhCvT1) requirements.  **React projects are prioritized**. 
@@ -63,6 +66,7 @@ I loved this for 3 reasons 💖:
 3) The docs said it'd return clear error codes.
 
 <hr>
+
 ### My journey 🗺️
 
 <hr>
@@ -81,6 +85,7 @@ I start my first couple hours by:
 
 
 <hr>
+
 ### Built with 🛠️
 ![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black) to re-render only the changed sections.
 ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white) to scaffold and bundle my project.
@@ -93,6 +98,7 @@ I start my first couple hours by:
 
 
 <hr>
+
 ### What I reviewed 📓
 
 - ##### Just how to start up a project 😕
@@ -115,9 +121,11 @@ In my excitement and haste, I forgot to label my git commits correctly!
 
 [Writing better commit messages](https://medium.com/swlh/writing-better-commit-messages-9b0b6ff60c67)
 <hr>
+
 ### What I learned 👩🏽‍🎓
 
 <hr>
+
 ### Resources 📑
 
 [The Collab Lab](https://the-collab-lab.codes/) is this super-cool organization offering this opportunity.
@@ -129,6 +137,7 @@ In my excitement and haste, I forgot to label my git commits correctly!
 [Writing better commit messages](https://medium.com/swlh/writing-better-commit-messages-9b0b6ff60c67) is a great reminder on commit messages.
 
 <hr>
+
 ### About me 🤪
 
 Hiya! 👋 My name is **Jolene Kearse**, a Canadian who identifies as a **forever expat**.
@@ -162,6 +171,7 @@ I've been taking a **DSA** course that uses Python, and just had to laugh how th
 Another challenge I am undertaking this year is [Exercism's](https://exercism.org/) **#12in23**. This is a cool 😎 opportunity to try out 12 different languages this year. Each month has a theme, like **Functional February** and **Mechanical March** to encourage you to check out different language paradims. I'm loving this chance to dip my toe in other types of programming. 
 
 <hr>
+
 ### Contact me 📯
 
 I'd love ❤️ to connect with y'all (_sorry, I love using that ironicallly and do so with great frequency_ 😜):
