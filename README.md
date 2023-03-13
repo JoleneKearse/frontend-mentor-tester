@@ -9,15 +9,23 @@ Well, this is my **application project** for **[The Collab Lab](https://the-coll
 <hr>
 
 ## Table of Contents 📜
-- [Links 🔗]()
-- [Screenshots 📸]()
-- [Deciding on the project 📔]()
-- [Built with 🛠️]()
-- [What I reviewed 📓]()
-- [What I learned 👩🏽‍🎓]()
-- [Resources 📑]()
-- [About me 🤪]()
-- [Contact me 📯]()
+- [Links 🔗](https://github.com/JoleneKearse/frontend-mentor-tester#links-)
+- [Screenshots 📸](https://github.com/JoleneKearse/frontend-mentor-tester#screenshots-)
+- [Deciding on the project 📔](https://github.com/JoleneKearse/frontend-mentor-tester#deciding-on-the-project-)
+- [Built with 🛠️](https://github.com/JoleneKearse/frontend-mentor-tester#built-with-%EF%B8%8F)
+- [My journey 🎢](https://github.com/JoleneKearse/frontend-mentor-tester#my-journey-%EF%B8%8F)
+  - [Day 1 🏁1️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-1-1%EF%B8%8F%E2%83%A3)
+  - [Day 2 🏁2️⃣]()
+  - [Day 3 🏁3️⃣]()
+  - [Day 4 🏁4️⃣]()
+  - [Day 5 🏁5️⃣]()
+  - [Day 6 🏁6️⃣]()
+  - [Day 7 🏁7️⃣]()
+- [What I reviewed 📓](https://github.com/JoleneKearse/frontend-mentor-tester#what-i-reviewed-)
+- [What I learned 👩🏽‍🎓](https://github.com/JoleneKearse/frontend-mentor-tester#what-i-learned-)
+- [Resources 📑](https://github.com/JoleneKearse/frontend-mentor-tester#resources-)
+- [About me 🤪](https://github.com/JoleneKearse/frontend-mentor-tester#about-me-)
+- [Contact me 📯](https://github.com/JoleneKearse/frontend-mentor-tester#contact-me-)
 
 <hr>
 
@@ -67,7 +75,17 @@ I loved this for 3 reasons 💖:
 
 <hr>
 
-### My journey 🗺️
+### Built with 🛠️
+![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black) to re-render only the changed sections.
+![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white) to scaffold and bundle my project.
+![Yarn](https://img.shields.io/badge/Yarn-2C8EBB.svg?style=for-the-badge&logo=Yarn&logoColor=white) for its super-speed.
+![SWC](https://img.shields.io/badge/SWC-FFFFFF.svg?style=for-the-badge&logo=SWC&logoColor=black) to challenge myself & because it is reported to be faster.
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black) for the nuts and bolts code.
+![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white) to make it all wonderfully beautiful & pleasing to use.
+![Git](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white) for version code.
+![Github](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white) to showcase my code.
+
+### My journey 🎢
 
 <hr>
 
@@ -84,17 +102,14 @@ I start my first couple hours by:
 4) Holding myself accountable, by posting on [LinkedIn](https://www.linkedin.com/in/jolene-kearse-2562ba218/)
 
 
-<hr>
 
-### Built with 🛠️
-![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black) to re-render only the changed sections.
-![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white) to scaffold and bundle my project.
-![Yarn](https://img.shields.io/badge/Yarn-2C8EBB.svg?style=for-the-badge&logo=Yarn&logoColor=white) for its super-speed.
-![SWC](https://img.shields.io/badge/SWC-FFFFFF.svg?style=for-the-badge&logo=SWC&logoColor=black) to challenge myself & because it is reported to be faster.
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black) for the nuts and bolts code.
-![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white) to make it all wonderfully beautiful & pleasing to use.
-![Git](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white) for version code.
-![Github](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white) to showcase my code.
+
+
+
+
+
+
+
 
 
 <hr>
