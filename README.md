@@ -153,8 +153,21 @@ import IconGithub from './assets/icon-github.svg'
 ...
 <img src={IconGithub} alt="" />
 ```
+Unfortunately I got an **error** at the file path.  I checked out some of my prior projects and even went through the options in [this article](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/#:~:text=Importing%20SVGs%20using%20the%20image,supports%20it%20off%20the%20bat.).  
 
+So, yep, research is good, but know what's even better?
 
+Actually reading the error message!
+
+I'd have saved myself about an hour if I'd _really_ considered my file path in the first place.  I know this is one of my trouble spots! 
+
+I was trying to access a file in my `assets` directory from within`/components`, so I needed to come out of one folder, up a level, then back into another, so all I had needed was another period/dot!
+
+![File path with explanation of where I had to navigate to](/screenshots/assets-file-path.png)
+
+Since I've had this issue so many times before, I took the time to remind myself of two things:
+1) `.` means the **current directory**, while
+2) `..` is the **parent directory**.
 
 <hr>
 
