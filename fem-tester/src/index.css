@@ -1,5 +1,10 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --clr-neutral-100: #FFFFFF;
+  --clr-neutral-200: #fafafa;
+  --clr-neutral-300: #dbe5e6;
+
+
+  font-family: 'Barlow', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
