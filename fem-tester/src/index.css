@@ -81,7 +81,7 @@ button {
 
 .title {
   font-size: clamp(2.5rem, 1.5278rem + 1.5556vw, 3.375rem);
-  line-height: 1
+  line-height: 1;
 }
 
 .intro,
@@ -98,7 +98,8 @@ body {
   margin-inline: auto;
 }
 
-#inputBlock {
+#inputBlock,
+#outputBlock {
   margin: var(--gap-med) auto;
   border-radius: var(--border-radius);
   border: .1rem solid var(--clr-neutral-300);
@@ -144,6 +145,10 @@ button {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.image-box {
+  background-image: var(--gradient-img);
 }
 
 footer {

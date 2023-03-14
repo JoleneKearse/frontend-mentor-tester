@@ -111,6 +111,7 @@ Today I cleaned up the boilerplate and worked on the design on the fly!
 4) Have quite a time of it remembering how to import SVGs.
 
 
+#### Day 3 🏁3️⃣
 
 
 

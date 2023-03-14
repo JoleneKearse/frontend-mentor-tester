@@ -1,16 +1,62 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Input from './components/Input'
+import Output from './components/Output'
 import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [url, setUrl] = useState('')
+  const [mobView, setMobView] = useState('')
+  const [deskView, setDeskView] = useState('')
+  const urlValue = useRef('')
+
+  const BASE_URL = 'https://screenshot.abstractapi.com/v1/'
+  const API_KEY = '1245491679c74a789930afb8ae8911f8'
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const userUrl = urlValue.current.value
+    setUrl(urlValue.current.value)
+
+    // build endpoint for API call
+    const endpoint = `${BASE_URL}?api_key=${API_KEY}&url=${userUrl}&capture_full_page=false&export_format=png`
+    console.log(endpoint)
+    // const mobEndpoint = `${endpoint}&width=375`
+    // const deskEndpoint = `${endpoint}&width=1440`
+    // setMobView(`${endpoint}&width=375`)
+    // setDeskView(`${endpoint}&width=1440`)
+
+    // make call to Abstract Screenshot API
+    // function httpGetAsync(url, callback) {
+    //   const xmlHttp = new XMLHttpRequest()
+    //   xmlHttp.onreadystatechange = function() {
+    //     if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
+    //     callback(xmlHttp.responseText)
+    //   }
+    //   xmlHttp.open("GET", url, true)
+    //   xmlHttp.send(null)
+    // }
+    // httpGetAsync(mobEndpoint)
+    // httpGetAsync(deskEndpoint)
+  }
 
   return (
     <div className="App">
       <Header />
-      <Input />
+      <Input
+        url={url}
+        setUrl={setUrl}
+        urlValue={urlValue}
+        handleSubmit={handleSubmit} 
+      />
+      <Output 
+        mobView={mobView}
+        setMobView={setMobView}
+        deskView={deskView}
+        setDeskView={setDeskView}
+        // httpGetAsync={httpGetAsync}
+      />
       <Footer />
     </div>
   )
