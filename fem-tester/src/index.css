@@ -93,7 +93,14 @@ button {
 
 /* LAYOUT */
 
-body {
+body,
+#outputBlock {
+  width: 100%;
+}
+
+.header, 
+#inputBlock,
+footer {
   max-width: 70%;
   margin-inline: auto;
 }
@@ -108,7 +115,6 @@ body {
 
 #siteInput {
   margin-bottom: var(--gap-med);
-  outline: 1px solid limegreen;
 }
 
 #siteInput label {
@@ -128,7 +134,6 @@ input {
   flex: 70% 1 1;
   margin-left: 0;
   color: var(--clr-neutral-900);
-  outline: 1px solid violet;
 }
 
 button {
@@ -148,7 +153,15 @@ button:focus-visible {
 }
 
 .image-box {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: var(--gap-sm);
   background-image: var(--gradient-img);
+}
+
+.fit-div {
+  max-width: 100%;
 }
 
 footer {

@@ -21,9 +21,6 @@ function App() {
 
     // build endpoint for API call
     const endpoint = `${BASE_URL}?api_key=${API_KEY}&url=${userUrl}&capture_full_page=false&export_format=png`
-    console.log(endpoint)
-    const mobEndpoint = `${endpoint}&width=375`
-    const deskEndpoint = `${endpoint}&width=1440`
     setMobView(`${endpoint}&width=375`)
     setDeskView(`${endpoint}&width=1440`)
   }
