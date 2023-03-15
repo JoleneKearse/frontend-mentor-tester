@@ -21,6 +21,14 @@ const Input = ({ url, setUrl, urlValue, handleSubmit }) => {
             ref={urlValue}
             onChange={(e) => setUrl(e.target.value)} />
         </label>
+        <div className="file-upload flex">
+          <label htmlFor="mobImg">
+            <input type="file" name="mobImg" id="mobImg" accept='image/png, image/jpeg'/>
+          </label>
+          <label htmlFor="deskImg">
+            <input type="file" name="deskImg" id="deskImg" accept='image/png, image/jpeg'/>
+          </label>
+        </div>
         <button
           type="submit"
         >
