@@ -33,16 +33,20 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 700px;
   min-height: 100vh;
+  text-align: center;
 }
 
 ul, 
 li,
+div,
+form,
+label,
 input,
 button {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -93,9 +97,9 @@ button {
 
 /* LAYOUT */
 
-body,
 #outputBlock {
-  width: 100%;
+  width: 95vw;
+  margin-inline: auto;
 }
 
 .header, 
@@ -119,6 +123,7 @@ footer {
 
 #siteInput label {
   display: flex;
+  justify-content: space-between;
   width: 80%;
   margin-inline: auto;
 }
@@ -132,36 +137,28 @@ input {
 
 #websiteUrl {
   flex: 70% 1 1;
-  margin-left: 0;
   color: var(--clr-neutral-900);
 }
 
 button {
-  border-radius: 8px;
+  padding: .4em 1em;
+  border-radius: var(--border-radius);
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  transition: border-color 0.25s;
+  background-color: var(--clr-accent-pred);
+  transition: all 0.25s;
 }
 
 button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+button:focus-visible,
+button:hover {
+  background-color: var(--clr-accent-pink);
+  color: var(--clr-neutral-900);
+
 }
 
 .image-box {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   padding: var(--gap-sm);
   background-image: var(--gradient-img);
-}
-
-.fit-div {
-  max-width: 100%;
 }
 
 footer {

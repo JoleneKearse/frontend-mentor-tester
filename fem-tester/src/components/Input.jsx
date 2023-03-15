@@ -9,9 +9,9 @@ const Input = ({ url, setUrl, urlValue, handleSubmit }) => {
       <p>Simply enter your <span className='gradient-text bold'>deployed site</span> and check out the results!</p>
       <form
         id="siteInput"
-        className='flex'
+        // className='flex'
         onSubmit={handleSubmit}>
-        <label htmlFor="urlInput">
+        <label htmlFor="urlInput" >
           <input
             type="url"
             name="urlInput"

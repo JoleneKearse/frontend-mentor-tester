@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Output = ({ mobView, setMobView, deskView, setDesktopView, httpGetAsync }) => {
+const Output = ({ mobView, deskView }) => {
   return (
     <div id='outputBlock'>
       <div className="view" id='mobView'>
@@ -9,7 +9,7 @@ const Output = ({ mobView, setMobView, deskView, setDesktopView, httpGetAsync })
       </div>
       <div className="view" id='deskView'>
         <h3>Desktop View</h3>
-        <div className="image-box"><img src={deskView} alt="" className='fit-div ' /></div>
+        <div className="image-box"><img src={deskView} alt="" /></div>
       </div>
     </div>
   )
