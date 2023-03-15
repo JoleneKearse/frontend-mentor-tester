@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Input from './components/Input'
@@ -22,24 +22,30 @@ function App() {
     // build endpoint for API call
     const endpoint = `${BASE_URL}?api_key=${API_KEY}&url=${userUrl}&capture_full_page=false&export_format=png`
     console.log(endpoint)
-    // const mobEndpoint = `${endpoint}&width=375`
-    // const deskEndpoint = `${endpoint}&width=1440`
-    // setMobView(`${endpoint}&width=375`)
-    // setDeskView(`${endpoint}&width=1440`)
-
-    // make call to Abstract Screenshot API
-    // function httpGetAsync(url, callback) {
-    //   const xmlHttp = new XMLHttpRequest()
-    //   xmlHttp.onreadystatechange = function() {
-    //     if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
-    //     callback(xmlHttp.responseText)
-    //   }
-    //   xmlHttp.open("GET", url, true)
-    //   xmlHttp.send(null)
-    // }
-    // httpGetAsync(mobEndpoint)
-    // httpGetAsync(deskEndpoint)
+    const mobEndpoint = `${endpoint}&width=375`
+    const deskEndpoint = `${endpoint}&width=1440`
+    setMobView(`${endpoint}&width=375`)
+    setDeskView(`${endpoint}&width=1440`)
   }
+
+  useEffect(() => {
+    fetch(mobView)
+      .then((res) => {
+        if (res.ok) {
+          return res.json()
+        }
+        throw res
+      })
+      .then((data) => setMobView(data))
+    fetch(deskView)
+      .then((res) => {
+        if (res.ok) {
+          return res.json()
+        }
+        throw res
+      })
+      .then((data) => setDeskView(data))
+  }, [])
 
   return (
     <div className="App">
@@ -48,14 +54,14 @@ function App() {
         url={url}
         setUrl={setUrl}
         urlValue={urlValue}
-        handleSubmit={handleSubmit} 
+        handleSubmit={handleSubmit}
       />
-      <Output 
+      <Output
         mobView={mobView}
         setMobView={setMobView}
         deskView={deskView}
         setDeskView={setDeskView}
-        // httpGetAsync={httpGetAsync}
+      // httpGetAsync={httpGetAsync}
       />
       <Footer />
     </div>
