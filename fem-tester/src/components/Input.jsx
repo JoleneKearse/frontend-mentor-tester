@@ -6,7 +6,7 @@ const Input = ({ url, setUrl, urlValue, handleSubmit }) => {
   return (
     <div id="inputBlock">
       <h2>Params</h2>
-      <p>Simply enter your <span className='gradient-text bold'>deployed site</span> and check out the results!</p>
+      <p><span className='gradient-text bold'>1)</span> Enter your <span className='gradient-text bold'>deployed site</span>.</p>
       <form
         id="siteInput"
         // className='flex'
@@ -21,12 +21,13 @@ const Input = ({ url, setUrl, urlValue, handleSubmit }) => {
             ref={urlValue}
             onChange={(e) => setUrl(e.target.value)} />
         </label>
+        <p><span className='gradient-text bold'>2)</span> Upload the provided <span className='gradient-text bold'>mobile</span> & <span className='gradient-text bold'>desktop</span> images.</p>
         <div className="file-upload flex">
           <label htmlFor="mobImg">
-            <input type="file" name="mobImg" id="mobImg" accept='image/png, image/jpeg'/>
+            <input type="file" name="mobImg" id="mobImg" accept='image/png, image/jpeg' value="" className='upload-btn' />
           </label>
           <label htmlFor="deskImg">
-            <input type="file" name="deskImg" id="deskImg" accept='image/png, image/jpeg'/>
+            <input type="file" name="deskImg" id="deskImg" accept='image/png, image/jpeg' value="" className='upload-btn' />
           </label>
         </div>
         <button

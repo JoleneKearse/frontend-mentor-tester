@@ -59,7 +59,8 @@ button {
 }
 
 a,
-button {
+button,
+.upload-btn {
   cursor: pointer;
 }
 /* UTILITY CLASSES */
@@ -121,14 +122,14 @@ footer {
   margin-bottom: var(--gap-med);
 }
 
-#siteInput label {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
+#siteInput #websiteUrl,
+.file-upload {
+  width: 85%;
   margin-inline: auto;
+  margin-bottom: var(--gap-sm);
 }
 
-input {
+#siteInput #websiteUrl {
   padding: .5em 1em;
   border: none;
   border-radius: var(--border-radius);
@@ -138,6 +139,35 @@ input {
 #websiteUrl {
   flex: 70% 1 1;
   color: var(--clr-neutral-900);
+}
+
+.upload-btn {
+  color: transparent;
+}
+
+.upload-btn::-webkit-file-upload-button {
+  display: none;
+}
+
+.upload-btn::before {
+  content: 'Upload FEM images';
+  display: inline-block;
+  padding: .5em 1em;
+  background: var(--clr-accent-blue);
+  border: 1px solid var(--clr-accent-aqua);
+  border-radius: var(--border-radius);
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  color: var(--clr-neutral-200)
+}
+
+.upload-btn:hover::before {
+  border-color: var(--clr-accent-aqua);
+}
+
+.upload-btn:active::before {
+  background: -webit-linear-gradient(top, var(--clr-accent-blue), var(--clr-accent-aqua));
 }
 
 button {
