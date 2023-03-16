@@ -71,6 +71,14 @@ button,
   -webkit-text-fill-color: transparent;
 }
 
+.text-stroke {
+  -webkit-text-stroke: .1rem var(--clr-accent-blue); 
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px black;
+}
+
 .bold {
   font-weight: bold;
 }
