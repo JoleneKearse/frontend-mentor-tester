@@ -52,6 +52,12 @@ function App() {
     console.timeLog()
   }
 
+  const slide = () => {
+    let slideValue = document.getElementsByClassName('slider').value
+    document.getElementsByClassName('user-design-img').style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)"
+    console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)")
+  }
+
   useEffect(() => {
     fetch(mobView)
       .then((res) => {
@@ -136,6 +142,7 @@ function App() {
         setDeskUpload={setDeskUpload}
         mobDataUrl={mobDataUrl}
         deskDataUrl={deskDataUrl}
+        slide={slide}
       />
       <Footer />
     </div>

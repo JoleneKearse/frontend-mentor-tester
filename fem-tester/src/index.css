@@ -5,7 +5,7 @@
   --clr-neutral-900: #1c2022;
   --clr-accent-aqua: #67bece;
   --clr-accent-blue: #3e54a3;
-  --clr-accent-pink: #f9c7c5;
+  --clr-accent-pink: rgb(249, 199, 197);
   --clr-accent-pred: #ed2c49;
   --border-radius: .5em;
   --gap-sm: 1em;
@@ -60,7 +60,8 @@ button {
 
 a,
 button,
-.upload-btn {
+.upload-btn,
+#slider {
   cursor: pointer;
 }
 /* UTILITY CLASSES */
@@ -213,6 +214,34 @@ button:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.img-path {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+.slider{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-appearance: none;
+  width: calc( 100% + 40px);
+  height: 100%;
+  margin-left: -20px;
+  background-color: transparent;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  background: url("slider-icon.svg"),
+  rgba(249,199,197,0.5);
+  border: 3px solid #ed2c49;
+  border-radius: 50%;
+  background-size: contain;
 }
 
 footer {
