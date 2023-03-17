@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Input = ({ url, setUrl, urlValue, mobUpload, setMobUpload, deskUpload, setDeskUpload, handleSubmit, handleFileUpload }) => {
+const Input = ({ url, setUrl, urlValue, handleSubmit, handleMobFileUpload, handleDeskFileUpload }) => {
 
 
   return (
@@ -29,9 +29,9 @@ const Input = ({ url, setUrl, urlValue, mobUpload, setMobUpload, deskUpload, set
               name="mobImg"
               id="mobImg"
               accept='image/*'
-              value={mobUpload}
-              className='upload-btn' 
-              onChange={(e) => setMobUpload(e.target.value)} />
+              value=''
+              className='upload-btn'
+              onChange={handleMobFileUpload} />
           </label>
           <label htmlFor="deskImg">
             <input
@@ -39,9 +39,9 @@ const Input = ({ url, setUrl, urlValue, mobUpload, setMobUpload, deskUpload, set
               name="deskImg"
               id="deskImg"
               accept='image/*'
-              value={deskUpload}
+              value=''
               className='upload-btn'
-              onChange={(e) => setDeskUpload(e.target.value)} />
+              onChange={handleDeskFileUpload} />
           </label>
         </div>
         <button
