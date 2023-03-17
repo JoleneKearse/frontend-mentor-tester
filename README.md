@@ -188,6 +188,10 @@ Since I've had this issue so many times before, I took the time to remind myself
 
 [How to Import SVGs in a React and Vite app](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/#:~:text=Importing%20SVGs%20using%20the%20image,supports%20it%20off%20the%20bat.) provides 6 ways to do it.  The first worked in my case - of course I did start in reverse order! 🤣 
 
+[Using the `FileReader` API to preview images in React](https://blog.logrocket.com/using-filereader-api-preview-images-react/) is an easy to understand guide to display user uploaded images to a page.
+
+[How to Measure JavaScript Execution Time](https://dev.to/saranshk/how-to-measure-javascript-execution-time-5h2#:~:text=The%20easiest%20way%20to%20track,the%20difference%20of%20the%20two.) was my introduction to the Console's time methods.
+
 <hr>
 
 ### About me 🤪
