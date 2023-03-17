@@ -39,7 +39,6 @@ function App() {
       return
     }
     setMobUpload(mobUpload)
-    console.time()
   }
 
   const handleDeskFileUpload = (e) => {
@@ -49,14 +48,13 @@ function App() {
       return
     }
     setDeskUpload(deskUpload)
-    console.timeLog()
   }
 
-  const slide = () => {
-    let slideValue = document.getElementsByClassName('slider').value
-    document.getElementsByClassName('user-design-img').style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)"
-    console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)")
-  }
+  // const slide = () => {
+  //   let slideValue = document.getElementsByClassName('slider').value
+  //   document.getElementsByClassName('user-design-img').style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)"
+  //   console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)")
+  // }
 
   useEffect(() => {
     fetch(mobView)
@@ -136,13 +134,8 @@ function App() {
       <Output
         mobView={mobView}
         deskView={deskView}
-        mobUpload={mobUpload}
-        setMobUpload={setMobUpload}
-        deskUpload={deskUpload}
-        setDeskUpload={setDeskUpload}
         mobDataUrl={mobDataUrl}
         deskDataUrl={deskDataUrl}
-        slide={slide}
       />
       <Footer />
     </div>

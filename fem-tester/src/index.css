@@ -202,9 +202,23 @@ button:hover {
   left: 0;
   padding: var(--gap-sm);
   background-image: var(--gradient-img);
+  /* overflow: hidden; */
 }
 
+.user-designed-img,
 .upload-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.user-designed-img {
+  z-index: 1;
+}
+
+/* .upload-img {
   position: relative;
   top: 0;
   left: 0;
@@ -214,11 +228,11 @@ button:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
-.img-path {
+/* .img-path {
   clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-}
+} */
 
 .slider{
   position: absolute;

@@ -9,7 +9,6 @@ const Input = ({ url, setUrl, urlValue, handleSubmit, handleMobFileUpload, handl
       <p><span className='gradient-text bold'>1)</span> Enter your <span className='gradient-text bold'>deployed site</span>.</p>
       <form
         id="siteInput"
-        // className='flex'
         onSubmit={handleSubmit}>
         <label htmlFor="urlInput" >
           <input
