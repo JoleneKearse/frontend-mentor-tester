@@ -37,6 +37,20 @@ Well, this is my **application project** for **[The Collab Lab](https://the-coll
 
 ### Screenshots 📸
 
+This is the _admittedly not fully styled initial page load_:
+![First view of the Frontend Mentor Tester page before the user enters anything](screenshots/intro-page.png)
+
+Here is the user entering their deployed site's URL and first of Frontend Mentor designs:
+
+![Uploading the file on windows](screenshots/user-input.png)
+
+Output component loading the user's screenshots on top of Frontend Mentor design files. (Using one of my own not-finished-challenges):
+
+![Mobile and desktop images displaying](screenshots/output.png)
+
+Using the slider to compare the user's coded result with the target design:
+
+![Using the slider on the mobile and desktop images to compare the two](screenshots/slider.png)
 
 <hr>
 
