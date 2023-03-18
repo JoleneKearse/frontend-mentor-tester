@@ -15,12 +15,12 @@ Well, this is my **application project** for **[The Collab Lab](https://the-coll
 - [Built with 🛠️](https://github.com/JoleneKearse/frontend-mentor-tester#built-with-%EF%B8%8F)
 - [My journey 🎢](https://github.com/JoleneKearse/frontend-mentor-tester#my-journey-%EF%B8%8F)
   - [Day 1 🏁1️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-1-1%EF%B8%8F%E2%83%A3)
-  - [Day 2 🏁2️⃣]()
-  - [Day 3 🏁3️⃣]()
-  - [Day 4 🏁4️⃣]()
-  - [Day 5 🏁5️⃣]()
-  - [Day 6 🏁6️⃣]()
-  - [Day 7 🏁7️⃣]()
+  - [Day 2 🏁2️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-2-2%EF%B8%8F%E2%83%A3)
+  - [Day 3 🏁3️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-3-3%EF%B8%8F%E2%83%A3)
+  - [Day 4 🏁4️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-4-4%EF%B8%8F%E2%83%A3)
+  - [Day 5 🏁5️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-5-5%EF%B8%8F%E2%83%A3)
+  - [Day 6 🏁6️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-6-6%EF%B8%8F%E2%83%A3)
+  - [Day 7 🏁7️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-7-7%EF%B8%8F%E2%83%A3)
 - [What I reviewed 📓](https://github.com/JoleneKearse/frontend-mentor-tester#what-i-reviewed-)
 - [What I learned 👩🏽‍🎓](https://github.com/JoleneKearse/frontend-mentor-tester#what-i-learned-)
 - [Resources 📑](https://github.com/JoleneKearse/frontend-mentor-tester#resources-)
@@ -229,6 +229,8 @@ Since I've had this issue so many times before, I took the time to remind myself
 <hr>
 
 ### What I learned 👩🏽‍🎓
+
+TBA
 
 <hr>
 
