@@ -61,7 +61,8 @@ button {
 a,
 button,
 .upload-btn,
-.slider {
+.slider,
+.underline {
   cursor: pointer;
 }
 /* UTILITY CLASSES */
@@ -84,6 +85,10 @@ button,
   font-weight: bold;
 }
 
+.underline {
+  border-bottom: 3px dotted var(--clr-accent-pink);
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -103,6 +108,11 @@ button,
   max-width: 40ch;
   margin-inline: auto;
   font-weight: 600;
+}
+
+.info,
+footer {
+  font-size: clamp(0.6875rem, 0.5486rem + 0.2222vw, 0.8125rem);
 }
 
 /* LAYOUT */
@@ -246,7 +256,6 @@ button:hover {
 footer {
   margin-top: var(--gap-sm);
   border-top: .1rem solid var(--clr-neutral-300);
-  font-size: clamp(0.6875rem, 0.5486rem + 0.2222vw, 0.8125rem);
   line-height: .2;
 }
 
