@@ -8,7 +8,9 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
     const userDesignedImg = imageBox.querySelector('.user-designed-img')
     userDesignedImg.style.clipPath = `polygon(0 0 , ${sliderValue}% 0, ${sliderValue}% 100%, 0 100%)`
     // have slider move with image percentage
-
+    const sliderThumb = imageBox.querySelectorAll('.slider')
+    const sliderThumbContainer = e.target.parentElement
+    sliderThumbContainer.style.left = `calc(${sliderValue}% - )`
   }
 
   // keep the image container the same size as the images
@@ -56,7 +58,8 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
                   max="100"
                   value="50"
                   className="slider"
-                  onInput={slide} />
+                  onInput={slide}
+                  title="Click on image and slide left or right to compare the images." />
               </div>
             </div>
             <div
@@ -81,7 +84,8 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
                   max="100"
                   value="50"
                   className="slider"
-                  onInput={slide} />
+                  onInput={slide}
+                  title="Click on image and slide left or right to compare the images." />
               </div>
             </div>
           </div>
