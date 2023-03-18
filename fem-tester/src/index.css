@@ -193,7 +193,6 @@ button:focus-visible,
 button:hover {
   background-color: var(--clr-accent-pink);
   color: var(--clr-neutral-900);
-
 }
 
 .image-box {
@@ -202,21 +201,8 @@ button:hover {
   left: 0;
   padding: var(--gap-sm);
   background-image: var(--gradient-img);
-  /* overflow: hidden; */
+  overflow: hidden;
 }
-
-/* .user-designed-img,
-.upload-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  object-fit: contain;
-} */
-
-/* .user-designed-img {
-  z-index: 1;
-} */
 
 .upload-img {
   position: relative;
@@ -228,11 +214,8 @@ button:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
-
-/* .img-path {
-  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-} */
 
 .slider{
   position: absolute;
@@ -245,6 +228,7 @@ button:hover {
   margin-left: -20px;
   background-color: transparent;
   outline: none;
+  z-index: 2;
 }
 
 .slider::-webkit-slider-thumb{
@@ -253,9 +237,10 @@ button:hover {
   width: 40px;
   background: url("slider-icon.svg"),
   rgba(249,199,197,0.5);
-  border: 3px solid #ed2c49;
+  border: 5px solid #ed2c49;
   border-radius: 50%;
   background-size: contain;
+  z-index: 2;
 }
 
 footer {

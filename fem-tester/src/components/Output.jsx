@@ -6,7 +6,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
     const sliderValue = e.target.value
     const imageBox = e.target.parentElement
     const userDesignedImg = imageBox.querySelector('.user-designed-img')
-    userDesignedImg.style.width = `${sliderValue}%`
+    userDesignedImg.style.clipPath = `polygon(0 0 , ${sliderValue}% 0, ${sliderValue}% 100%, 0 100%)`
   }
 
   const updateImageBoxHeight = (imageBox) => {
@@ -40,7 +40,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
                 <img
                   src={mobView}
                   alt="Your awesome mobile work"
-                  className='user-designed-img img-path' />
+                  className='user-designed-img' />
                 {mobDataUrl ?
                   <img
                     src={mobDataUrl}
@@ -51,7 +51,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
                   type="range"
                   min="0"
                   max="100"
-                  value="100"
+                  value="50"
                   className="slider"
                   onInput={slide} />
               </div>
@@ -65,7 +65,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
                 <img
                   src={deskView}
                   alt="Your awesome desktop work"
-                  className='user-designed-img img-path' />
+                  className='user-designed-img' />
                 {deskDataUrl ?
                   <img
                     src={deskDataUrl}
@@ -76,7 +76,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
                   type="range"
                   min="0"
                   max="100"
-                  value="100"
+                  value="50"
                   className="slider"
                   onInput={slide} />
               </div>
