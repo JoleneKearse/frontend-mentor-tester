@@ -13,8 +13,7 @@ const Header = () => {
 
       </ul>
       <p className="intro">But finding <span className='gradient-text bold'>quick</span> & <span className='gradient-text bold'>simple</span> ways to test the <span className='gradient-text bold'>375px mobile</span> and <span className='gradient-text bold'>1440px desktop</span> views can be a pain.</p>
-      <p className="intro">What if there was a simpler way?</p>
-      <p className="intro">Look no further.</p>
+      <p className="intro">This is my solution! Enter your params below, hit '<span className='gradient-text bold'>Go!</span>', then in just a few seconds, you'll be able to compare your coded result.</p>
     </div>
   )
 }
