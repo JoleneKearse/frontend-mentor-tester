@@ -91,6 +91,8 @@ I loved this for 3 reasons 💖:
 
 #### Day 1 🏁1️⃣
 
+![LinkedIn post for Day 1 of #applyingToCollabLab](screenshots/post1.png)
+
 I searched out **free APIs** to use and land on an awesome one I can use in a React project to solve a problem I've encountered - and I'm sure others have as well. 🕺🏼
 
 With an exciting idea & API in tow, I begin...
@@ -103,6 +105,8 @@ I start my first couple hours by:
 
 #### Day 2 🏁2️⃣
 
+![LinkedIn post for Day 2 of #applyingToCollabLab](screenshots/post2.png)
+
 Today I cleaned up the boilerplate and worked on the design on the fly!
 
 1) I use **DevTools** to determine the fonts used and add the **Google Fonts** links.
@@ -113,9 +117,13 @@ Today I cleaned up the boilerplate and worked on the design on the fly!
 
 #### Day 3 🏁3️⃣
 
+![LinkedIn post for Day 3 of #applyingToCollabLab](screenshots/post3.png)
+
 Today I finally got into **JavaScript**!  I worked on the endpoints for my API calls.
 
 #### Day 4 🏁4️⃣
+
+![LinkedIn post for Day 4 of #applyingToCollabLab](screenshots/post4.png)
 
 Woohoo! I successfully used the API to display my screenshots on the page.  So I had finished my **MVP** for this project, but...
 
@@ -131,6 +139,8 @@ Like that would be so awesome before you submit your solution!
 
 #### Day 5 🏁5️⃣
 
+![LinkedIn post for Day 5 of #applyingToCollabLab](screenshots/post5.png)
+
 I figured out what was needed to get this working:
 - a way to upload the images
 - placing them in the same space with the user's screenshot on top
@@ -141,6 +151,8 @@ I ran into my first **cool new thing to learn** on this project: Browsers have a
 I discovered [the `FileReader` API](https://blog.logrocket.com/using-filereader-api-preview-images-react/) as a work around.
 
 #### Day 6 🏁6️⃣
+
+![LinkedIn post for Day 6 of #applyingToCollabLab](screenshots/post6.png)
 
 Today was awesome! I:
 - got all 4 images to display
