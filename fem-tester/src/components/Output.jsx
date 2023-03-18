@@ -1,13 +1,12 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 
 const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
-  const imageBoxRefs = useRef([])
 
   const slide = (e) => {
     const sliderValue = e.target.value
     const imageBox = e.target.parentElement
     const userDesignedImg = imageBox.querySelector('.user-designed-img')
-    userDesignedImg.style.width = `${sliderValue}`
+    userDesignedImg.style.width = `${sliderValue}%`
   }
 
   const updateImageBoxHeight = (imageBox) => {
@@ -21,8 +20,11 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
   }
 
   useEffect(() => {
-    updateImageBoxHeight()
-  }, [])
+    const imageBoxes = document.querySelectorAll('.image-box')
+    imageBoxes.forEach((imageBox) => {
+      updateImageBoxHeight(imageBox)
+    })
+  }, [mobView, deskView, mobDataUrl, deskDataUrl])
 
   return (
     <>
@@ -34,12 +36,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
               id='mobView'>
               <h3>Mobile View</h3>
               <div
-                className="image-box"
-                ref={(el) => {
-                  if (el) {
-                    updateImageBoxHeight(el)
-                  }
-                }}>
+                className="image-box" >
                 <img
                   src={mobView}
                   alt="Your awesome mobile work"
@@ -54,7 +51,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
                   type="range"
                   min="0"
                   max="100"
-                  value="50"
+                  value="100"
                   className="slider"
                   onInput={slide} />
               </div>
@@ -64,12 +61,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
               id='deskView'>
               <h3>Desktop View</h3>
               <div
-                className="image-box"
-                ref={(el) => {
-                  if (el) {
-                    updateImageBoxHeight(el)
-                  }
-                }}>
+                className="image-box" >
                 <img
                   src={deskView}
                   alt="Your awesome desktop work"
@@ -84,7 +76,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
                   type="range"
                   min="0"
                   max="100"
-                  value="50"
+                  value="100"
                   className="slider"
                   onInput={slide} />
               </div>

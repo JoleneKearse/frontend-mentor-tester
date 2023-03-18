@@ -205,20 +205,20 @@ button:hover {
   /* overflow: hidden; */
 }
 
-.user-designed-img,
+/* .user-designed-img,
 .upload-img {
   position: absolute;
   top: 0;
   left: 0;
   max-width: 100%;
   object-fit: contain;
-}
+} */
 
-.user-designed-img {
+/* .user-designed-img {
   z-index: 1;
-}
+} */
 
-/* .upload-img {
+.upload-img {
   position: relative;
   top: 0;
   left: 0;
@@ -228,7 +228,7 @@ button:hover {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-} */
+}
 
 /* .img-path {
   clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
