@@ -5,7 +5,7 @@
   --clr-neutral-900: #1c2022;
   --clr-accent-aqua: #67bece;
   --clr-accent-blue: #3e54a3;
-  --clr-accent-pink: rgb(249, 199, 197);
+  --clr-accent-pink: #f9c7c5;
   --clr-accent-pred: #ed2c49;
   --border-radius: .5em;
   --gap-sm: 1em;
@@ -108,6 +108,12 @@ button,
   max-width: 40ch;
   margin-inline: auto;
   font-weight: 600;
+}
+
+a {
+  color: var(--clr-accent-pink);
+  font-weight: bold;
+  text-decoration-style: wavy;
 }
 
 .info,
