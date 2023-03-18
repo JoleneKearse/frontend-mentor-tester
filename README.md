@@ -124,7 +124,7 @@ Today I cleaned up the boilerplate and worked on the design on the fly!
 
 ### What I reviewed 📓
 
-- ##### Just how to start up a project 😕
+- ##### Just how to set up a project 😕
 
 I noticed _just how long_ it had been since I spun up a React project using Vite and Yarn! I had to spend a little bit with my fingers on the keyboard in the CLI, thinking: _"What's that command, again?"_
 

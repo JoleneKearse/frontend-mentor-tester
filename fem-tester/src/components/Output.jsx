@@ -7,10 +7,6 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
     const imageBox = e.target.parentElement
     const userDesignedImg = imageBox.querySelector('.user-designed-img')
     userDesignedImg.style.clipPath = `polygon(0 0 , ${sliderValue}% 0, ${sliderValue}% 100%, 0 100%)`
-    // have slider move with image percentage
-    const sliderThumb = imageBox.querySelectorAll('.slider')
-    const sliderThumbContainer = e.target.parentElement
-    sliderThumbContainer.style.left = `calc(${sliderValue}% - )`
   }
 
   // keep the image container the same size as the images
