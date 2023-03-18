@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react'
 
 const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
-
+  // allow slider to show % of upload image under user's
   const slide = (e) => {
     const sliderValue = e.target.value
     const imageBox = e.target.parentElement
     const userDesignedImg = imageBox.querySelector('.user-designed-img')
     userDesignedImg.style.clipPath = `polygon(0 0 , ${sliderValue}% 0, ${sliderValue}% 100%, 0 100%)`
+    // have slider move with image percentage
+
   }
 
+  // keep the image container the same size as the images
   const updateImageBoxHeight = (imageBox) => {
     const userDesignedImg = imageBox.querySelector('.user-designed-img')
     const uploadImg = imageBox.querySelector('.upload-img')
