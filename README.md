@@ -76,14 +76,14 @@ I loved this for 3 reasons 💖:
 <hr>
 
 ### Built with 🛠️
-![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black) to re-render only the changed sections.
-![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white) to scaffold and bundle my project.
-![Yarn](https://img.shields.io/badge/Yarn-2C8EBB.svg?style=for-the-badge&logo=Yarn&logoColor=white) for its super-speed.
-![SWC](https://img.shields.io/badge/SWC-FFFFFF.svg?style=for-the-badge&logo=SWC&logoColor=black) to challenge myself & because it is reported to be faster.
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black) for the nuts and bolts code.
-![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white) to make it all wonderfully beautiful & pleasing to use.
-![Git](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white) for version code.
-![Github](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white) to showcase my code.
+- ![React](https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black) to re-render only the changed sections.
+- ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white) to scaffold and bundle my project.
+- ![Yarn](https://img.shields.io/badge/Yarn-2C8EBB.svg?style=for-the-badge&logo=Yarn&logoColor=white) for its super-speed.
+- ![SWC](https://img.shields.io/badge/SWC-FFFFFF.svg?style=for-the-badge&logo=SWC&logoColor=black) to challenge myself & because it is reported to be faster.
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black) for the nuts and bolts code.
+- ![CSS](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white) to make it all wonderfully beautiful & pleasing to use.
+- ![Git](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white) for version code.
+- ![Github](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white) to showcase my code.
 
 ### My journey 🎢
 
@@ -113,12 +113,56 @@ Today I cleaned up the boilerplate and worked on the design on the fly!
 
 #### Day 3 🏁3️⃣
 
+Today I finally got into **JavaScript**!  I worked on the endpoints for my API calls.
 
+#### Day 4 🏁4️⃣
 
+Woohoo! I successfully used the API to display my screenshots on the page.  So I had finished my **MVP** for this project, but...
 
+I noticed some UX improvements are needed.
 
+While I could compare my project's screenshot to the design image, it took more fiddling with windows and apps than I'd like to subject my users to!
 
+So I found a new _MVP_! I wanted a **Design Comparison** like on Frontend Mentor! 
 
+![Frontend Mentor's Design Comparison that let's you compare your coded design on top of the target](screenshots/design-comparison.png)
+
+Like that would be so awesome before you submit your solution!
+
+#### Day 5 🏁5️⃣
+
+I figured out what was needed to get this working:
+- a way to upload the images
+- placing them in the same space with the user's screenshot on top
+- a way to 'slide' the user's image aside to easily compare the two.  
+
+I ran into my first **cool new thing to learn** on this project: Browsers have a security feature to prevent JavaScript from accessing users' local file paths. Certainly sounds reasonable, although it meant I'd have to find another way to upload the Frontend Mentor provided design image to compare with the user's result.  
+
+I discovered [the `FileReader` API](https://blog.logrocket.com/using-filereader-api-preview-images-react/) as a work around.
+
+#### Day 6 🏁6️⃣
+
+Today was awesome! I:
+- got all 4 images to display
+- got them correctly stacked & centered
+
+But... Oh no!
+
+The **image comparison** was much harder than I had thought! 
+
+I had researched it yesterday, then tried to code it on the fly to no avail. I returned to two articles I had read, and 1 & a half videos - also a no-go! 
+
+So I freely admit I turned to **ChatGPT**. Of course, every answer had little issues with it, but I love using it as an assistant when coding by myself. After reviewing its' spit out code, there is often a mistake you can point out and have it re-generate. Also you need to have the **right leading questions**. 
+
+#### Day 7 🏁7️⃣
+
+I got my **MVP+** working! 🎉 I have some additional UX changes to make and didn't get most of my _cool, but time intensive_ design choices implemented.
+
+But, wow!, I am so happy with what I've been able to do in a week!!!
+
+Today I got my **image comparison slider** working. Yes, at first it was just re-sizing the user's images above the Frontend Mentor designs, but I re-iterated until I had it working like on Frontend Mentor itself!
+
+I also had a first, my Vercel deploy failed!
 
 <hr>
 
