@@ -117,7 +117,7 @@ With an exciting idea & API in tow, I begin...
 I start my first couple hours by:
 1) _Happily_, remembering (without looking up) how to scaffold a React project using **Vite** and **Yarn** in the **CLI**;
 2) Deciding to say _C'est la vie_ and go with the `JavaScript + SWC` option;
-3) Starting the *README**; and
+3) Starting the **README**; and
 4) Holding myself accountable, by posting on [LinkedIn](https://www.linkedin.com/in/jolene-kearse-2562ba218/)
 
 #### Day 2 🏁2️⃣
@@ -249,7 +249,45 @@ Since I've had this issue so many times before, I took the time to remind myself
 
 ### What I learned 👩🏽‍🎓
 
-TBA
+#### How to upload files from the user's computer
+
+This was the first time, I'd actually used `<input type="file">` in a real project! It was necessary to compare the user's screenshots with the provided design. 
+
+I had, wrongly, assumed I could simply use the **file path** to display the image. However, it didn't work! When I `console.log()`d it I encountered a new thing: `C:\fakepath\desktop-design.jpg`.
+
+I had to Google '_What is this fakepath thing?_'
+
+I learned that it is a _reasonable_ security feature that our browsers have to prevent a local file path from being seen by JavaScript. Like sure, that makes sense, but I needed some way to get around it.
+
+I discovered the **FileReader API**, which let's you read the content of a file without the path.  
+
+Fortunately, it was pretty straight-forward to use:
+
+```js
+  useEffect(() => {
+    let fileReader, isCancel = false
+    if (deskUpload) {
+      fileReader = new FileReader()
+      fileReader.onload = (e) => {
+        const { result } = e.target
+        if (result && !isCancel) {
+          setDeskDataUrl(result)
+        }
+      }
+      fileReader.readAsDataURL(deskUpload)
+    }
+    return () => {
+      isCancel = true
+      if (fileReader && fileReader.readyState === 1) {
+        fileReader.abort()
+      }
+    }
+  }, [deskUpload])
+```
+
+#### Creating a image comparison slider
+
+
 
 <hr>
 
