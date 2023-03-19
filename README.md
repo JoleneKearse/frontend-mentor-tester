@@ -185,13 +185,15 @@ So I freely admit I turned to **ChatGPT**. Of course, every answer had little is
 
 #### Day 7 🏁7️⃣
 
+![LinkedIn post for Day 7 of #applyingToCollabLab](screenshots/post7.png)
+
 I got my **MVP+** working! 🎉 I have some additional UX changes to make and didn't get most of my _cool, but time intensive_ design choices implemented.
 
 But, wow!, I am so happy with what I've been able to do in a week!!!
 
 Today I got my **image comparison slider** working. Yes, at first it was just re-sizing the user's images above the Frontend Mentor designs, but I re-iterated until I had it working like on Frontend Mentor itself!
 
-I also had a first, my Vercel deploy failed!
+I also had a first, my Vercel deploy fail! Whenever I scaffold a project with Vite, I end up with another directory in the open folder in VS Code. So far, this has just annoyed me, cause it seemed messy. But this time, Vercel couldn't find my source files! I had to copy each folder up a level. 
 
 <hr>
 
