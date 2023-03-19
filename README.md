@@ -1,5 +1,7 @@
 # Welcome to my **Frontend Mentor Tester**!!!!!!!
 
+Visit the [Live Site](https://frontend-mentor-tester.vercel.app/)!
+
 Hello, 你好, 안녕하세요, Hola, Hallo, Bonjour!
 
 Why the 7 exclamation points, you ask?
@@ -13,7 +15,7 @@ Well, this is my **application project** for **[The Collab Lab](https://the-coll
 - [Screenshots 📸](https://github.com/JoleneKearse/frontend-mentor-tester#screenshots-)
 - [Deciding on the project 📔](https://github.com/JoleneKearse/frontend-mentor-tester#deciding-on-the-project-)
 - [Built with 🛠️](https://github.com/JoleneKearse/frontend-mentor-tester#built-with-%EF%B8%8F)
-- [My journey 🎢](https://github.com/JoleneKearse/frontend-mentor-tester#my-journey-%EF%B8%8F)
+- [My journey 🎢](https://github.com/JoleneKearse/frontend-mentor-tester#my-journey-)
   - [Day 1 🏁1️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-1-1%EF%B8%8F%E2%83%A3)
   - [Day 2 🏁2️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-2-2%EF%B8%8F%E2%83%A3)
   - [Day 3 🏁3️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-3-3%EF%B8%8F%E2%83%A3)
@@ -21,8 +23,16 @@ Well, this is my **application project** for **[The Collab Lab](https://the-coll
   - [Day 5 🏁5️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-5-5%EF%B8%8F%E2%83%A3)
   - [Day 6 🏁6️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-6-6%EF%B8%8F%E2%83%A3)
   - [Day 7 🏁7️⃣](https://github.com/JoleneKearse/frontend-mentor-tester#day-7-7%EF%B8%8F%E2%83%A3)
+
 - [What I reviewed 📓](https://github.com/JoleneKearse/frontend-mentor-tester#what-i-reviewed-)
+    - [Just how to set up a project](https://github.com/JoleneKearse/frontend-mentor-tester#just-how-to-set-up-a-project-)
+    - [Initializing a Github repo](https://github.com/JoleneKearse/frontend-mentor-tester#initializing-a-github-repo)
+    - [Writing good commit messages](https://github.com/JoleneKearse/frontend-mentor-tester#writing-good-commit-messages)
+    - [Getting correct file paths](https://github.com/JoleneKearse/frontend-mentor-tester#getting-correct-file-paths)
+
 - [What I learned 👩🏽‍🎓](https://github.com/JoleneKearse/frontend-mentor-tester#what-i-learned-)
+  - [How to upload files from the user's computer](https://github.com/JoleneKearse/frontend-mentor-tester#how-to-upload-files-from-the-users-computer)
+  - [Creating a image comparison slider](https://github.com/JoleneKearse/frontend-mentor-tester#creating-a-image-comparison-slider)
 - [Resources 📑](https://github.com/JoleneKearse/frontend-mentor-tester#resources-)
 - [About me 🤪](https://github.com/JoleneKearse/frontend-mentor-tester#about-me-)
 - [Contact me 📯](https://github.com/JoleneKearse/frontend-mentor-tester#contact-me-)
@@ -45,13 +55,15 @@ Here is the user entering their deployed site's URL and first of Frontend Mentor
 
 ![Uploading the file on windows](screenshots/user-input.png)
 
-Output component loading the user's screenshots on top of Frontend Mentor design files. (Using one of my own not-finished-challenges):
+Output component loading the user's screenshots on top of Frontend Mentor design files. (Using one of my own _not-finished_-challenges):
 
 ![Mobile and desktop images displaying](screenshots/output.png)
 
 Using the slider to compare the user's coded result with the target design:
 
 ![Using the slider on the mobile and desktop images to compare the two](screenshots/slider.png)
+
+Back to [Table of Contents](https://github.com/JoleneKearse/frontend-mentor-tester#table-of-contents-)
 
 <hr>
 
@@ -90,6 +102,8 @@ I loved this for 3 reasons 💖:
 2) You could customize the sizes; and
 3) The docs said it'd return clear error codes.
 
+Back to [Table of Contents](https://github.com/JoleneKearse/frontend-mentor-tester#table-of-contents-)
+
 <hr>
 
 ### Built with 🛠️
@@ -102,7 +116,11 @@ I loved this for 3 reasons 💖:
 - ![Git](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white) for version code.
 - ![Github](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white) to showcase my code.
 
+Back to [Table of Contents](https://github.com/JoleneKearse/frontend-mentor-tester#table-of-contents-)
+
 ### My journey 🎢
+
+I decided to **learn in public** for this project, so I'll include my LinkedIn posts as well as a quick write-up on each day.
 
 <hr>
 
@@ -193,7 +211,9 @@ But, wow!, I am so happy with what I've been able to do in a week!!!
 
 Today I got my **image comparison slider** working. Yes, at first it was just re-sizing the user's images above the Frontend Mentor designs, but I re-iterated until I had it working like on Frontend Mentor itself!
 
-I also had a first, my Vercel deploy fail! Whenever I scaffold a project with Vite, I end up with another directory in the open folder in VS Code. So far, this has just annoyed me, cause it seemed messy. But this time, Vercel couldn't find my source files! I had to copy each folder up a level. 
+I also had a first, my Vercel deploy fail! Whenever I scaffold a project with Vite, I end up with another directory in the open folder in VS Code. So far, this has just annoyed me, cause it seemed messy. But this time, Vercel couldn't find my source files! I had to copy each folder up a level.
+
+Back to [Table of Contents](https://github.com/JoleneKearse/frontend-mentor-tester#table-of-contents-)
 
 <hr>
 
@@ -244,6 +264,8 @@ I was trying to access a file in my `assets` directory from within`/components`,
 Since I've had this issue so many times before, I took the time to remind myself of two things:
 1) `.` means the **current directory**, while
 2) `..` is the **parent directory**.
+
+Back to [Table of Contents](https://github.com/JoleneKearse/frontend-mentor-tester#table-of-contents-)
 
 <hr>
 
@@ -323,6 +345,8 @@ const slide = (e) => {
   }, [mobView, deskView, mobDataUrl, deskDataUrl])
 ```
 
+Back to [Table of Contents](https://github.com/JoleneKearse/frontend-mentor-tester#table-of-contents-)
+
 <hr>
 
 ### Resources 📑
@@ -340,6 +364,8 @@ const slide = (e) => {
 [Using the `FileReader` API to preview images in React](https://blog.logrocket.com/using-filereader-api-preview-images-react/) is an easy to understand guide to display user uploaded images to a page.
 
 [How to Measure JavaScript Execution Time](https://dev.to/saranshk/how-to-measure-javascript-execution-time-5h2#:~:text=The%20easiest%20way%20to%20track,the%20difference%20of%20the%20two.) was my introduction to the Console's time methods.
+
+Back to [Table of Contents](https://github.com/JoleneKearse/frontend-mentor-tester#table-of-contents-)
 
 <hr>
 
@@ -375,6 +401,8 @@ I've been taking a **DSA** course that uses Python, and just had to laugh how th
 
 Another challenge I am undertaking this year is [Exercism's](https://exercism.org/) **#12in23**. This is a cool 😎 opportunity to try out 12 different languages this year. Each month has a theme, like **Functional February** and **Mechanical March** to encourage you to check out different language paradims. I'm loving this chance to dip my toe in other types of programming. 
 
+Back to [Table of Contents](https://github.com/JoleneKearse/frontend-mentor-tester#table-of-contents-)
+
 <hr>
 
 ### Contact me 📯
@@ -383,3 +411,5 @@ I'd love ❤️ to connect with y'all (_sorry, I love using that ironicallly and
 - [LinkedIn](https://www.linkedin.com/in/jolene-kearse-2562ba218/)
 - [Github](https://github.com/JoleneKearse)
 - [Twitter](https://twitter.com/FromJolene)
+
+Back to [Table of Contents](https://github.com/JoleneKearse/frontend-mentor-tester#table-of-contents-)
