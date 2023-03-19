@@ -287,7 +287,41 @@ Fortunately, it was pretty straight-forward to use:
 
 #### Creating a image comparison slider
 
+This was the most difficult problem I faced. I had had ideas and researched articles and videos that showed I was on to the solution. But implementing it took a lot of tries! 
 
+I first tried adding a class to the user's screenshots with a clip path to no effect. But that was because I wasn't using the full strength of React!
+
+After 3, 4 or 5 other tries. I turned to ChatGPT for help. I did finally get the image to re-size and followed that trail as it was getting me closer.
+
+In my attempt, the `.image-box` divs somehow 'lost' their height. I'm still not sure how that happened, but it introduced me to the `naturalHeight` and `naturalWidth` HTML image properties. The former let me keep the div at the correct height.
+
+In the end, I returned to the `clipPath` solution, but within `useEffect` with my image variables as dependencies.
+
+```js
+const slide = (e) => {
+    const sliderValue = e.target.value
+    const imageBox = e.target.parentElement
+    const userDesignedImg = imageBox.querySelector('.user-designed-img')
+    userDesignedImg.style.clipPath = `polygon(0 0 , ${sliderValue}% 0, ${sliderValue}% 100%, 0 100%)`
+  }
+
+  const updateImageBoxHeight = (imageBox) => {
+    const userDesignedImg = imageBox.querySelector('.user-designed-img')
+    const uploadImg = imageBox.querySelector('.upload-img')
+
+    if (userDesignedImg.naturalHeight && uploadImg.naturalHeight) {
+      const maxHeight = Math.max(userDesignedImg.naturalHeight, uploadImg.naturalHeight)
+      imageBox.style.height = `${maxHeight}px`
+    }
+  }
+
+  useEffect(() => {
+    const imageBoxes = document.querySelectorAll('.image-box')
+    imageBoxes.forEach((imageBox) => {
+      updateImageBoxHeight(imageBox)
+    })
+  }, [mobView, deskView, mobDataUrl, deskDataUrl])
+```
 
 <hr>
 
