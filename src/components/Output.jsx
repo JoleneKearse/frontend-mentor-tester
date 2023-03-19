@@ -35,7 +35,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
             <div
               className="view"
               id='mobView'>
-              <h3>Mobile View</h3>
+              <h3 className='gradient-text bold'>Mobile View</h3>
               <div
                 className="image-box" >
                 <img
@@ -61,7 +61,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
             <div
               className="view"
               id='deskView'>
-              <h3>Desktop View</h3>
+              <h3 className='gradient-text bold'>Desktop View</h3>
               <div
                 className="image-box" >
                 <img

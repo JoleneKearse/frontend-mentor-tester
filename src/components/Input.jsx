@@ -5,7 +5,7 @@ const Input = ({ url, setUrl, urlValue, handleSubmit, handleMobFileUpload, handl
 
   return (
     <div id="inputBlock">
-      <h2>Params</h2>
+      <h2 className='gradient-text bold'>Params</h2>
       <p><span className='gradient-text bold'>1)</span> Enter your <span className='gradient-text bold underline' title="Sorry this site can't handle a local site - yet!">deployed site</span>.</p>
       <p className='info'>If you haven't deployed it yet, head over to <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a> or <a href="https://www.netlify.com/?utm_medium=paid_search&utm_source=google&utm_campaign=12755510784&utm_term=netlify" target="_blank" rel="noopener noreferrer">Netlify</a>.</p>
       <form
