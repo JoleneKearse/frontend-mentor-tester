@@ -4,7 +4,6 @@ const Header = () => {
   return (
     <div className='header'>
       <h1 className='title gradient-text text-stroke'>Frontend Mentor Tester</h1>
-      {/* <div className="zig-zag"></div> */}
       <p className="intro"><a href="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer">Frontend Mentor</a> is an <span className='gradient-text bold'>awesome</span> way to:</p>
       <ul className='intro-list'>
         <li><span className='gradient-text bold'>challenge</span> yourself</li>
