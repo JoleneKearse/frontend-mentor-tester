@@ -17,6 +17,8 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
     if (userDesignedImg.naturalHeight && uploadImg.naturalHeight) {
       const maxHeight = Math.max(userDesignedImg.naturalHeight, uploadImg.naturalHeight)
       imageBox.style.height = `${maxHeight}px`
+      console.log(`user: ${userDesignedImg.naturalHeight} x ${userDesignedImg.naturalWidth}`)
+      console.log(`frontend: ${uploadImg.naturalHeight} x ${uploadImg.naturalWidth}`)
     }
   }
 

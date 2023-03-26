@@ -6,7 +6,7 @@
   --clr-accent-aqua: #67bece;
   --clr-accent-blue: #3e54a3;
   --clr-accent-pink: #f9c7c5;
-  --clr-accent-pred: #ed2c49;
+  --clr-accent-red: #ed2c49;
   --border-radius: .5em;
   --gap-sm: 1em;
   --gap-med: 2em;
@@ -85,10 +85,6 @@ button,
   font-weight: bold;
 }
 
-.underline {
-  border-bottom: 3px dotted var(--clr-accent-pink);
-}
-
 .flex {
   display: flex;
   justify-content: center;
@@ -100,7 +96,7 @@ button,
 
 .title {
   font-size: clamp(2.5rem, 1.5278rem + 1.5556vw, 3.375rem);
-  line-height: 1;
+  line-height: 2;
 }
 
 .intro,
@@ -201,7 +197,7 @@ button {
   padding: .4em 1em;
   border-radius: var(--border-radius);
   border: 1px solid transparent;
-  background-color: var(--clr-accent-pred);
+  background-color: var(--clr-accent-red);
   transition: all 0.25s;
 }
 
