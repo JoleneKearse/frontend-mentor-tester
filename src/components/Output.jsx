@@ -9,16 +9,18 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
     userDesignedImg.style.clipPath = `polygon(0 0 , ${sliderValue}% 0, ${sliderValue}% 100%, 0 100%)`
   }
 
+
   // keep the image container the same size as the images
   const updateImageBoxHeight = (imageBox) => {
     const userDesignedImg = imageBox.querySelector('.user-designed-img')
     const uploadImg = imageBox.querySelector('.upload-img')
 
     if (userDesignedImg.naturalHeight && uploadImg.naturalHeight) {
+      console.log(`user: ${userDesignedImg.naturalWidth} x ${userDesignedImg.naturalHeight}`)
+      console.log(`frontend: ${uploadImg.naturalWidth} x ${uploadImg.naturalHeight}`)
       const maxHeight = Math.max(userDesignedImg.naturalHeight, uploadImg.naturalHeight)
       imageBox.style.height = `${maxHeight}px`
-      console.log(`user: ${userDesignedImg.naturalHeight} x ${userDesignedImg.naturalWidth}`)
-      console.log(`frontend: ${uploadImg.naturalHeight} x ${uploadImg.naturalWidth}`)
+
     }
   }
 

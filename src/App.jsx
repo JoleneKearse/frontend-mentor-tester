@@ -17,18 +17,18 @@ function App() {
 
   const image = /image\/(png|jpg|jpeg)/i
 
-  const BASE_URL = 'https://screenshot.abstractapi.com/v1/'
-  const API_KEY = '1245491679c74a789930afb8ae8911f8'
+  // const BASE_URL = 'https://screenshot.abstractapi.com/v1/'
+  const BASE_URL = 'https://api.apiflash.com/v1/urltoimage'
+  const API_KEY = 'fee3ec2acf804a6c9893d7d971a2905e'
 
   const handleSubmit = (e) => {
     e.preventDefault()
     const userUrl = urlValue.current.value
     setUrl(urlValue.current.value)
 
-    // build endpoint for API call
-    const endpoint = `${BASE_URL}?api_key=${API_KEY}&url=${userUrl}&capture_full_page=false&export_format=png`
-    setMobView(`${endpoint}&width=375`)
-    setDeskView(`${endpoint}&width=1440`)
+    const endpoint = `${BASE_URL}?access_key=${API_KEY}&url=${userUrl}&format=png`
+    setMobView(`${endpoint}&width=375&height=812&scale_factor=1`)
+    setDeskView(`${endpoint}&width=1440&height=960&scale_factor=1`)
   }
 
   // get file upload previews
