@@ -213,7 +213,7 @@ button:hover {
   top: 0;
   left: 0;
   padding: var(--gap-sm);
-  background-image: var(--gradient-img);
+  background-image: url("src/assets/bg-mob.svg"), var(--gradient-img);
   overflow: hidden;
 }
 

@@ -38,7 +38,8 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
               id='mobView'>
               <h3 className='gradient-text bold'>Mobile View</h3>
               <div
-                className="image-box" >
+                className="image-box"
+              >
                 <img
                   src={mobView}
                   alt="Your awesome mobile work"
