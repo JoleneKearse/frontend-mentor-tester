@@ -82,6 +82,7 @@ h1 .title-deco {
   -webkit-text-stroke: .2rem var(--clr-accent-red);
   -webkit-text-fill-color: transparent;
   background: var(--clr-accent-pink);
+  border-radius: .75rem 0;
 }
 
 .text-shadow {
