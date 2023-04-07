@@ -103,7 +103,7 @@ h1 .title-deco {
 /* TYPOGRAPHY */
 
 .title {
-  font-size: clamp(2.5rem, 1.5278rem + 1.5556vw, 3.375rem);
+  font-size: clamp(4.5rem, 1.5278rem + 1.5556vw, 4.375rem);
   line-height: 2;
 }
 
