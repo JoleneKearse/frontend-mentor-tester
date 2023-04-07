@@ -77,6 +77,13 @@ button,
   -webkit-text-stroke: .1rem var(--clr-accent-blue); 
 }
 
+h1 .title-deco {
+  padding: .1rem .4rem;
+  -webkit-text-stroke: .2rem var(--clr-accent-red);
+  -webkit-text-fill-color: transparent;
+  background: var(--clr-accent-pink);
+}
+
 .text-shadow {
   text-shadow: 1px 1px 2px black;
 }
