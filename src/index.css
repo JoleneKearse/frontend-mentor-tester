@@ -10,6 +10,7 @@
   --border-radius: .5em;
   --gap-sm: 1em;
   --gap-med: 2em;
+  --gap-lg: 3em;
   --gradient-img: linear-gradient(to top, #f0f0f0, #d1d1d1);
 
   font-size: clamp(1.0625rem, 0.5069rem + 0.8889vw, 1.5625rem);
@@ -111,6 +112,7 @@ h1 .title-deco {
 .intro-list {
   max-width: 40ch;
   margin-inline: auto;
+  margin-bottom: var(--gap-lg);
   font-weight: 600;
 }
 
