@@ -101,6 +101,12 @@ h1 .title-deco {
   gap: var(--gap-sm);
 }
 
+.side-by-side {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-med);
+}
+
 /* TYPOGRAPHY */
 
 .title {
@@ -113,6 +119,7 @@ h1 .title-deco {
   max-width: 40ch;
   margin-inline: auto;
   margin-bottom: var(--gap-lg);
+  line-height: 1.75;
   font-weight: 600;
 }
 
@@ -128,6 +135,17 @@ footer {
 }
 
 /* LAYOUT */
+
+.cover-img {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  border-radius: var(--gap-med);
+}
+
+.intro-text {
+  width: 70%;
+}
 
 #outputBlock {
   width: 95vw;
