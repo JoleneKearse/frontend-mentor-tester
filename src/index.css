@@ -147,6 +147,10 @@ footer {
   width: 75%;
 }
 
+.deco {
+  margin: var(--gap-med) auto var(--gap-med) auto;
+}
+
 #outputBlock {
   width: 95vw;
   margin-inline: auto;

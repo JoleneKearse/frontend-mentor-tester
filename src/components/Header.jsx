@@ -16,6 +16,7 @@ const Header = () => {
         </div>
       </div>
 
+      <img src="src/assets/down-arrow.png" alt="" className='deco' />
 
     </div>
   )
