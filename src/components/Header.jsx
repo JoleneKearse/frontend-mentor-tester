@@ -18,7 +18,7 @@ const Header = () => {
         </div>
       </div>
 
-      <img src={Arrow} alt="" className='deco' />
+      <img src={Arrow} alt="" className='deco cursor' />
 
     </div>
   )

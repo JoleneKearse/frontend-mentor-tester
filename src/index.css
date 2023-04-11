@@ -107,6 +107,10 @@ h1 .title-deco {
   gap: var(--gap-med);
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 /* TYPOGRAPHY */
 h1 {
   margin-top: 0;
