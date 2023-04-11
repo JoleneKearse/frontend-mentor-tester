@@ -1,4 +1,5 @@
 import React from 'react'
+import Cover from '../assets/fm-tester-cover.png'
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
 
       <div className="side-by-side">
         <div>
-          <img src="src/assets/cover-img.png" alt="anime girl stressed out testing mobile and desktop sites" className='cover-img' />
+          <img src={Cover} alt="anime girl stressed out testing mobile and desktop sites" className='cover-img' />
         </div>
         <div className="intro-text">
           <p className="intro">Tired of spending all that <span className='gradient-text bold'>exhausting</span> time testing out <span className='gradient-text bold'>375px mobile</span> and <span className='gradient-text bold'>1440px desktop</span> views of your <a href="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer">Frontend Mentor</a> <span className='gradient-text bold'>challenges?</span>.</p>
