@@ -13,7 +13,7 @@
   --gap-lg: 3em;
   --gradient-img: linear-gradient(to top, #f0f0f0, #d1d1d1);
 
-  font-size: clamp(1.0625rem, 0.5069rem + 0.8889vw, 1.5625rem);
+  font-size: clamp(1.25rem, 1.0855rem + 0.5263vw, 1.875rem);
   font-family: 'Barlow', sans-serif;
   line-height: 1.2;
   font-weight: 400;
@@ -30,12 +30,14 @@
 }
 
 /* RESET */
-
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   text-align: center;
+  scroll-behavior: auto;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 ul, 
@@ -136,12 +138,23 @@ a {
   text-decoration-style: wavy;
 }
 
+h2 {
+  font-size: clamp(3rem, 1.5278rem + 1.5556vw, 2.375rem);
+}
+
 .info,
 footer {
   font-size: clamp(0.6875rem, 0.5486rem + 0.2222vw, 0.8125rem);
 }
 
 /* LAYOUT */
+#header,
+#inputBlock,
+#outputBlock {
+  min-height: 80vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
 
 .cover-img {
   width: 85%;
