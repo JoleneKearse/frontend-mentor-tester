@@ -23,8 +23,12 @@ function App() {
 
   const handleClickScroll = () => {
     const input = document.getElementById('inputBlock')
+    const output = document.getElementById('outputBlock')
     if (input) {
       input.scrollIntoView({ behavior: 'smooth' })
+    }
+    if (output) {
+      output.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
@@ -119,7 +123,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header 
+      <Header
         handleClickScroll={handleClickScroll}
       />
       <Input
@@ -133,6 +137,7 @@ function App() {
         handleSubmit={handleSubmit}
         handleMobFileUpload={handleMobFileUpload}
         handleDeskFileUpload={handleDeskFileUpload}
+        handleClickScroll={handleClickScroll}
       />
       <Output
         mobView={mobView}

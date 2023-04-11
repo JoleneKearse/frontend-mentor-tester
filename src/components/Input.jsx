@@ -1,6 +1,7 @@
 import React from 'react'
+import Arrow from '../assets/down-arrow.png'
 
-const Input = ({ url, setUrl, urlValue, handleSubmit, handleMobFileUpload, handleDeskFileUpload }) => {
+const Input = ({ url, setUrl, urlValue, handleSubmit, handleMobFileUpload, handleDeskFileUpload, handleClickScroll }) => {
 
 
   return (
@@ -50,6 +51,7 @@ const Input = ({ url, setUrl, urlValue, handleSubmit, handleMobFileUpload, handl
           Go!
         </button>
       </form>
+      <img src={Arrow} alt="" className='deco cursor' onClick={handleClickScroll} />
     </div>
   )
 }
