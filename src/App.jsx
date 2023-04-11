@@ -21,6 +21,13 @@ function App() {
   const BASE_URL = 'https://api.apiflash.com/v1/urltoimage'
   const API_KEY = 'fee3ec2acf804a6c9893d7d971a2905e'
 
+  const handleClickScroll = () => {
+    const input = document.getElementById('inputBlock')
+    if (input) {
+      input.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
     const userUrl = urlValue.current.value
@@ -112,7 +119,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header 
+        handleClickScroll={handleClickScroll}
+      />
       <Input
         url={url}
         setUrl={setUrl}

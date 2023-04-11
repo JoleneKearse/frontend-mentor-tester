@@ -2,7 +2,7 @@ import React from 'react'
 import Cover from '../assets/fm-tester-cover.png'
 import Arrow from '../assets/down-arrow.png'
 
-const Header = () => {
+const Header = ({ handleClickScroll }) => {
   return (
     <div className='header'>
       <h1 className='title gradient-text text-stroke'>Frontend Mentor <span class="title-deco">Tester</span></h1>
@@ -18,7 +18,7 @@ const Header = () => {
         </div>
       </div>
 
-      <img src={Arrow} alt="" className='deco cursor' />
+      <img src={Arrow} alt="" className='deco cursor' onClick={handleClickScroll}/>
 
     </div>
   )
