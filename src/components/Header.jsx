@@ -1,5 +1,6 @@
 import React from 'react'
 import Cover from '../assets/fm-tester-cover.png'
+import Arrow from '../assets/down-arrow.png'
 
 const Header = () => {
   return (
@@ -17,7 +18,7 @@ const Header = () => {
         </div>
       </div>
 
-      <img src="src/assets/down-arrow.png" alt="" className='deco' />
+      <img src={Arrow} alt="" className='deco' />
 
     </div>
   )
