@@ -1,9 +1,15 @@
 import React from 'react'
 import Arrow from '../assets/down-arrow.png'
 
-const Input = ({ url, setUrl, urlValue, handleSubmit, handleMobFileUpload, handleDeskFileUpload, handleClickScroll, inputSec }) => {
-
-  
+const Input = ({
+  url,
+  setUrl,
+  urlValue,
+  handleSubmit,
+  handleMobFileUpload,
+  handleDeskFileUpload,
+  handleClickScroll,
+  inputSec }) => {
 
   return (
     <>
