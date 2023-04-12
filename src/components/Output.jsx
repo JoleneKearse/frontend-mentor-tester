@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
+const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl, outputSec }) => {
   // allow slider to show % of upload image under user's
   const slide = (e) => {
     const sliderValue = e.target.value
@@ -32,7 +32,7 @@ const Output = ({ mobView, deskView, mobDataUrl, deskDataUrl }) => {
     <>
       {
         mobView !== '' && mobDataUrl !== null ? (
-          <div id='outputBlock'>
+          <div id='outputBlock' ref={outputSec}>
             <div
               className="view"
               id='mobView'>

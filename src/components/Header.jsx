@@ -2,9 +2,9 @@ import React from 'react'
 import Cover from '../assets/fm-tester-cover.png'
 import Arrow from '../assets/down-arrow.png'
 
-const Header = ({ handleClickScroll }) => {
+const Header = ({ handleClickScroll, scrollRef }) => {
   return (
-    <div className='header'>
+    <div className='header' id='header'>
       <h1 className='title gradient-text text-stroke'>Frontend Mentor <span class="title-deco">Tester</span></h1>
 
       <div className="side-by-side">

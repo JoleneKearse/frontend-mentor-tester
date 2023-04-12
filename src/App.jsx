@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import useScrollSnap from 'react-use-scroll-snap'
 import './index.css'
 import Header from './components/Header'
 import Input from './components/Input'
@@ -20,6 +21,9 @@ function App() {
   // const BASE_URL = 'https://screenshot.abstractapi.com/v1/'
   const BASE_URL = 'https://api.apiflash.com/v1/urltoimage'
   const API_KEY = 'fee3ec2acf804a6c9893d7d971a2905e'
+
+  const inputSec = useRef()
+  const outputSec = useRef()
 
   const handleClickScroll = () => {
     const input = document.getElementById('inputBlock')
@@ -138,12 +142,14 @@ function App() {
         handleMobFileUpload={handleMobFileUpload}
         handleDeskFileUpload={handleDeskFileUpload}
         handleClickScroll={handleClickScroll}
+        inputSec={inputSec}
       />
       <Output
         mobView={mobView}
         deskView={deskView}
         mobDataUrl={mobDataUrl}
         deskDataUrl={deskDataUrl}
+        outputSec={outputSec}
       />
       <Footer />
     </div>
