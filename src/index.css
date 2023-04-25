@@ -43,7 +43,8 @@ div,
 form,
 label,
 input,
-button {
+button,
+span {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -117,7 +118,7 @@ h1 {
 
 .title {
   font-size: clamp(4.5rem, 1.5278rem + 1.5556vw, 4.375rem);
-  line-height: 2;
+  line-height: 1.25;
 }
 
 .intro,
@@ -157,7 +158,6 @@ footer {
 #header,
 #inputBlock,
 #outputBlock {
-  min-height: 100vh;
   scroll-snap-align: center;
 }
 
@@ -225,7 +225,18 @@ footer {
   color: var(--clr-neutral-900);
 }
 
+.file-upload {
+  position: relative;
+}
+
+.file-upload label {
+  height: 2.5em;
+}
+
 .upload-btn {
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%);
   width: 20vw;
   color: transparent;
 }
@@ -235,7 +246,7 @@ footer {
 }
 
 .upload-btn::before {
-  content: 'Upload FEM images';
+  content: 'Upload images';
   display: inline-block;
   padding: .5em 1em;
   background: var(--clr-accent-blue);

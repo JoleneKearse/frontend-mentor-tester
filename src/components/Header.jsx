@@ -5,7 +5,7 @@ import Arrow from '../assets/down-arrow.png'
 const Header = ({ handleClickScroll, scrollRef }) => {
   return (
     <div className='header' id='header'>
-      <h1 className='title gradient-text text-stroke'>Frontend Mentor <span class="title-deco">Tester</span></h1>
+      <h1 className='title gradient-text text-stroke'>Frontend Mentor <span className="title-deco">Tester</span></h1>
 
       <div className="side-by-side">
         <div>
@@ -18,7 +18,7 @@ const Header = ({ handleClickScroll, scrollRef }) => {
         </div>
       </div>
 
-      <img src={Arrow} alt="" className='deco cursor' onClick={handleClickScroll}/>
+      <img src={Arrow} alt="" className='deco cursor' onClick={handleClickScroll} />
 
     </div>
   )

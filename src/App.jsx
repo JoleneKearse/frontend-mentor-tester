@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react'
-import useScrollSnap from 'react-use-scroll-snap'
 import './index.css'
 import Header from './components/Header'
 import Input from './components/Input'
@@ -46,22 +45,30 @@ function App() {
   }
 
   // get file upload previews
-  const handleMobFileUpload = (e) => {
-    const mobUpload = e.target.files[0]
-    if (!mobUpload.type.match(image)) {
-      alert("Not an image file, please use .jpg, .jpeg, or .png.")
-      return
+  const handleFileUpload = (files) => {
+    const mobRegex = /mobile/i
+    const file1 = files.target.files[0].name
+    const file2 = files.target.files[1].name
+
+    if (file1.match(mobRegex)) {
+      handleMobFile(files.target.files[0])
+      handleDeskFile(files.target.files[1])
+    } else {
+      handleDeskFile(files.target.files[0])
+      handleMobFile(files.target.files[1])
     }
-    setMobUpload(mobUpload)
   }
 
-  const handleDeskFileUpload = (e) => {
-    const deskUpload = e.target.files[0]
-    if (!deskUpload.type.match(image)) {
-      alert("Not an image file, please use .jpg, .jpeg, or .png.")
-      return
-    }
+  const handleMobFile = (file) => {
+    const mobUpload = file
+    setMobUpload(mobUpload)
+    console.log(mobUpload)
+  }
+
+  const handleDeskFile = (file) => {
+    const deskUpload = file
     setDeskUpload(deskUpload)
+    console.log(deskUpload)
   }
 
   useEffect(() => {
@@ -138,8 +145,7 @@ function App() {
         deskUpload={deskUpload}
         setDeskUpload={setDeskUpload}
         handleSubmit={handleSubmit}
-        handleMobFileUpload={handleMobFileUpload}
-        handleDeskFileUpload={handleDeskFileUpload}
+        handleFileUpload={handleFileUpload}
         handleClickScroll={handleClickScroll}
         inputSec={inputSec}
       />
